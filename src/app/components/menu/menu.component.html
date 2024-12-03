@@ -2,7 +2,7 @@
   <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
   <div class="drawer-content flex flex-col">
     <!-- Navbar -->
-    <div class="navbar bg-base-200 w-full lg:px-48">
+    <div class="navbar sticky top-0 z-50 bg-base-200 w-full lg:px-48">
       <div class="flex-none lg:hidden">
         <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
           <ng-icon name="lucideAlignJustify" class="text-xl" />
@@ -12,7 +12,9 @@
         <div class="mx-2 flex-1 px-2 font-semibold">João Silva</div>
       </div>
       <div class="navbar-center hidden lg:block">
-        <button class="btn btn-ghost">Início</button>
+        <a href="#home">
+          <button class="btn btn-ghost">Início</button>
+        </a>
         <a href="#about">
           <button class="btn btn-ghost">Sobre</button>
         </a>
@@ -23,11 +25,15 @@
       <div class="navbar-end">
         <div class="hidden flex-none lg:block">
           <ul class="menu menu-horizontal">
-            <li class="tooltip tooltip-bottom tooltip-secondary" data-tip="GitHub">
-              <p><ng-icon name="lucideGithub" class="text-xl" /></p>
+            <li class="tooltip tooltip-bottom tooltip-secondary" data-tip="Behance">
+              <a href="https://www.behance.net/seunome" target="_blank">
+                <p><ng-icon name="tdesignLogoBehance" class="text-xl" /></p>
+              </a>
             </li>
             <li class="tooltip tooltip-bottom tooltip-secondary" data-tip="Linkedin">
-              <p><ng-icon name="lucideLinkedin" class="text-xl" /></p>
+              <a href="https://www.linkedin.com/in/seunome" target="_blank">
+                <p><ng-icon name="lucideLinkedin" class="text-xl" /></p>
+              </a>
             </li>
           </ul>
         </div>
@@ -37,21 +43,34 @@
     <app-home></app-home>
     <app-about></app-about>
     <app-works></app-works>
+    <app-contact></app-contact>
+    <app-footer></app-footer>
   </div>
   <div class="drawer-side">
     <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
-    <ul class="menu bg-base-200 min-h-full w-80 p-4">
+    <ul class="menu bg-base-200 min-h-full w-80 p-4 mt-16">
       <!-- Sidebar content here -->
-      <button class="btn btn-ghost">Início</button>
-      <button class="btn btn-ghost">Sobre</button>
-      <button class="btn btn-ghost">Trabalhos</button>
+      <a href="#home">
+        <button class="btn btn-ghost">Início</button>
+      </a>
+      <a href="#about">
+        <button class="btn btn-ghost">Sobre</button>
+      </a>
+      <a href="#works">
+        <button class="btn btn-ghost">Trabalhos</button>
+      </a>
+
       <div class="flex items-center justify-center mt-20 lg:block">
         <ul class="menu menu-horizontal">
-          <li class="tooltip tooltip-bottom tooltip-secondary" data-tip="GitHub">
-            <p><ng-icon name="lucideGithub" class="text-xl" /></p>
+          <li class="tooltip tooltip-bottom tooltip-secondary" data-tip="Behance">
+            <a href="https://www.behance.net/seunome" target="_blank">
+              <p><ng-icon name="tdesignLogoBehance" class="text-xl" /></p>
+            </a>
           </li>
           <li class="tooltip tooltip-bottom tooltip-secondary" data-tip="Linkedin">
-            <p><ng-icon name="lucideLinkedin" class="text-xl" /></p>
+            <a href="https://www.linkedin.com/in/seunome" target="_blank">
+              <p><ng-icon name="lucideLinkedin" class="text-xl" /></p>
+            </a>
           </li>
         </ul>
       </div>
