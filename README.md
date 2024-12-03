@@ -11,12 +11,12 @@ I created this blog template for sale.
 
 ### For Brazil
 
-- **R$50**: No layout modifications.
-- **R$100**: Customized design based on your needs.
+- **R$50**: Sem modificações no layout. Inclui mudanças simples, como alteração de cores, imagens e textos, mas sem modificações no layout estrutural.
+- **R$100**: Design personalizado conforme suas necessidades.
 
 ### International
 
-- **$30**: No layout modifications.
+- **$30**: No layout modifications. Includes simple changes, such as color adjustments, images, and text updates, but no structural layout modifications.
 - **$60**: Customized design based on your needs.
 
 ---
